@@ -1,0 +1,8 @@
+#
+# Alternative recipes settings
+#
+
+tellraw @s [{"text":"----------\nAlternative Recipes","bold":true},"\n\n"]
+tellraw @a [{"text":"Saddle","hover_event":{"action":"show_text","value":"Three leather, shapeless"}},":",{"text":" ","color":"green"},{"text":"Enable","color":"green","click_event":{"action":"run_command","command":"scoreboard players set $saddleRecipe saddleRecipe 1"}}," |",{"text":" ","color":"red"},{"text":"Disable","color":"red","click_event":{"action":"run_command","command":"scoreboard players set $saddleRecipe saddleRecipe 0"}}]
+tellraw @a [{"text":"TNT","hover_event":{"action":"show_text","value":"Corners are now paper"}},":",{"text":" ","color":"green"},{"text":"Enable","color":"green","click_event":{"action":"run_command","command":"scoreboard players set $tntRecipe tntRecipe 1"}}," |",{"text":" ","color":"red"},{"text":"Disable","color":"red","click_event":{"action":"run_command","command":"scoreboard players set $tntRecipe tntRecipe 0"}}]
+tellraw @a [{"text":"Nametag","hover_event":{"action":"show_text","value":"One paper one string, shapeless"}},":",{"text":" ","color":"green"},{"text":"Enable","color":"green","click_event":{"action":"run_command","command":"scoreboard players set $nametagRecipe nametagRecipe 1"}}," |",{"text":" ","color":"red"},{"text":"Disable","color":"red","click_event":{"action":"run_command","command":"scoreboard players set $nametagRecipe nametagRecipe 0"}}]

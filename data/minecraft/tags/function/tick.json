@@ -1,3 +1,3 @@
 {
-    "values": ["wlp:tick"]
+    "values": ["wlp:tick", "wlp:tick/set_recipes"]
 }

@@ -26,3 +26,20 @@ scoreboard players set $gameState gameState 0
 # Boogey toggle
 scoreboard objectives add boogeyEnabled dummy
 scoreboard players set $boogeyEnabled boogeyEnabled 0
+
+# Recipe management
+gamerule doLimitedCrafting true
+recipe give @a *
+
+#
+# Recipe objectives
+#
+
+scoreboard objectives add saddleRecipe dummy
+scoreboard players set $saddleRecipe saddleRecipe 0
+
+scoreboard objectives add tntRecipe dummy
+scoreboard players set $tntRecipe saddleRecipe 0
+
+scoreboard objectives add nametagRecipe dummy
+scoreboard players set $nametagRecipe saddleRecipe 0
