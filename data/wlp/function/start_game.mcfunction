@@ -3,8 +3,9 @@
 #
 
 scoreboard players set $gameState gameState 2
-# Set life count (MISSING RANDOMIZER ATM)
+# Set life count
 execute unless score $lives lives matches 0 run scoreboard players operation @a[tag=player] lives = $lives lives
+execute as @a[tag=player] if score $lives lives matches 0 store result score @s lives run random value 2..7
 
 # Set teams
 execute as @a[tag=player] if score @s lives matches 1 run team join wlp.red @s
