@@ -12,6 +12,7 @@ team remove wlp.spec
 
 tag @a remove player
 tag @a remove spec
+tag @a remove boogey
 
 # Remove objectives
 
