@@ -2,6 +2,11 @@
 # Start game and session
 #
 
+time set day
+weather clear
+effect give @a minecraft:saturation 5 5
+effect give @a minecraft:instant_health 1 4
+
 scoreboard players set $gameState gameState 2
 # Set life count
 execute unless score $lives lives matches 0 run scoreboard players operation @a[tag=player] lives = $lives lives

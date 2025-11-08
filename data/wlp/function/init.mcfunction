@@ -43,3 +43,10 @@ scoreboard players set $tntRecipe saddleRecipe 1
 
 scoreboard objectives add nametagRecipe dummy
 scoreboard players set $nametagRecipe saddleRecipe 1
+
+#
+# Mob egg drop objectives - enabled by default
+#
+
+scoreboard objectives add creeperEggEnabled dummy
+scoreboard players set $creeperEggEnabled creeperEggEnabled 1

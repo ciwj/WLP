@@ -4,6 +4,7 @@
 
 # Change life colour
 execute as @s[team=wlp.red] if score $gameState gameState matches 2 run tellraw @s ["",{"text":"RIP <3"},]
+execute as @s[team=wlp.red] if score $gameState gameState matches 2 run summon lightning_bolt ~ ~ ~
 execute as @s[team=wlp.red] if score $gameState gameState matches 2 run team join wlp.spec
 
 execute as @s[team=wlp.yellow] if score $gameState gameState matches 2 run tellraw @s ["",{"text":"You are now a "},{"text":"red","color":"red"},{"text":" life!"}]

@@ -17,7 +17,6 @@ execute as @s[team=wlp.yellow] if score $gameState gameState matches 2 run team 
 execute as @s[team=wlp.red] if score $gameState gameState matches 2 run tellraw @s ["",{"text":"You are now a "},{"text":"yellow","color":"yellow"},{"text":" life!"}]
 execute as @s[team=wlp.red] if score $gameState gameState matches 2 run team join wlp.yellow
 
-execute as @s[team=wlp.spec,tag=player] if score $gameState gameState matches 2 run tellraw @s ["",{"text":"You are now a "},{"text":"red","color":"red"},{"text":" life!"}]
-execute as @s[team=wlp.spec,tag=player] if score $gameState gameState matches 2 run team join wlp.red
-#If spectator refresh lives counter
-execute as @s[team=wlp.spec,tag=player] if score $gameState gameState matches 2 run scoreboard players set @s lives 1
+execute as @s[scores={lives=1},tag=player] run tellraw @s ["",{"text":"You are now a "},{"text":"red","color":"red"},{"text":" life!"}]
+execute as @s[scores={lives=1},tag=player] run team join wlp.red
+execute as @s[scores={lives=1},tag=player] run gamemode survival @s
