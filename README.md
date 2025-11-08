@@ -1,2 +1,2 @@
-# WLP
-Yet another life series datapack
+# The Obviois Life Datapack
+Yet Another Life Series Datapack
